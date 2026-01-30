@@ -13,7 +13,7 @@ const translations = {
         'nav.contact': 'Kontak',
 
         // Hero Section
-        'hero.greeting': 'Halo, saya',
+        'hero.greeting': '<span class="wave-emoji">👋</span> Halo, saya',
         'hero.title': 'Full-Stack Developer',
         'hero.subtitle': 'Saya membangun aplikasi web modern, mengintegrasikan AI, dan membuat solusi yang dapat di-scale untuk menyelesaikan masalah dunia nyata.',
         'hero.cta.projects': 'Lihat Proyek',
@@ -82,7 +82,7 @@ const translations = {
         'nav.contact': 'Contact',
 
         // Hero Section
-        'hero.greeting': "Hi, I'm",
+        'hero.greeting': '<span class="wave-emoji">👋</span> Hi, I\'m',
         'hero.title': 'Full-Stack Developer',
         'hero.subtitle': 'I build modern web applications, integrate AI, and create scalable solutions to solve real-world problems.',
         'hero.cta.projects': 'View Projects',
@@ -168,6 +168,9 @@ function updatePageTranslations() {
             } else {
                 element.value = translation;
             }
+        } else if (key === 'hero.greeting') {
+            // Use innerHTML for greeting to support emoji span
+            element.innerHTML = translation;
         } else {
             element.textContent = translation;
         }

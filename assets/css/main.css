@@ -250,6 +250,38 @@
     border-radius: var(--radius-full);
 }
 
+.wave-emoji {
+    display: inline-block;
+    animation: wave 2.5s infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+
+    0%,
+    60%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    30% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
 [data-theme="light"] .hero-subtitle {
     color: var(--color-primary);
 }
@@ -682,12 +714,27 @@ section {
 .github-stats {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-3xl);
+    gap: var(--spacing-xl);
     margin-bottom: var(--spacing-3xl);
+    flex-wrap: wrap;
 }
 
 .stat-item {
     text-align: center;
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    background: var(--glass-background);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    min-width: 140px;
+    transition: all var(--transition-base);
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+    border-color: var(--color-primary);
 }
 
 .stat-value {
