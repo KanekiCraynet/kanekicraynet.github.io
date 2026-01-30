@@ -1,0 +1,10 @@
+# Robots.txt for kanekicraynet.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://kanekicraynet.github.io/sitemap.xml
+
+# Disallow internal/build files
+Disallow: /.github/

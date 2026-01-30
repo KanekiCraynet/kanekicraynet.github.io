@@ -1,0 +1,27 @@
+{
+  "name": "Dzakri Phalosa Nugroho - Portfolio",
+  "short_name": "Dzakri Portfolio",
+  "description": "Full-Stack Developer Portfolio - Modern web technologies, AI integration, and scalable applications",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a1a",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "id",
+  "dir": "ltr"
+}
